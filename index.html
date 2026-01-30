@@ -2,140 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>The Flux Style | Luxury Bags & Wallets</title>
+<title>The Flux Style | Luxury Bags</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #faf9f7;
-  color: #333;
+body{
+margin:0;
+font-family:Poppins,Arial,sans-serif;
+background:#faf9f7;
+color:#333;
 }
 
 /* Header */
-header {
-  background: linear-gradient(135deg, #faf7f2, #f3ede4);
-  padding: 35px 20px;
-  text-align: center;
-  border-bottom: 1px solid #e6dccf;
+header{
+text-align:center;
+padding:30px 15px;
+background:linear-gradient(135deg,#faf7f2,#f3ede4);
+border-bottom:1px solid #e6dccf;
 }
-
-header h1 {
-  margin: 10px 0 5px;
-  font-size: 36px;
-  letter-spacing: 2px;
-  color: #111;
+.logo{width:150px;}
+header h1{
+margin:10px 0 5px;
+font-size:34px;
+letter-spacing:2px;
 }
-
-header p {
-  margin-top: 8px;
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-.logo {
-  width: 160px;
-  margin-bottom: 15px;
-}
+header p{font-size:14px;opacity:.85}
 
 /* Banner */
-.hero {
-  width: 100%;
-  height: 75vh;
-  overflow: hidden;
+.hero{
+width:100%;
+height:70vh;
+overflow:hidden;
+}
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+/* Section */
+section{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
 }
-
-/* Sections */
-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 40px;
+section h2{
+text-align:center;
+font-size:28px;
+margin-bottom:40px;
 }
 
 /* Products */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
-
-.product {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  text-align: center;
+.product{
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+text-align:center;
 }
-
-.product img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
+.product img{
+width:100%;
+height:280px;
+object-fit:cover;
 }
-
-.product h3 {
-  margin: 15px 0 5px;
+.product h3{margin:15px 0 5px}
+.product p{
+font-size:14px;
+padding:0 15px;
+color:#666;
 }
-
-.product p {
-  font-size: 14px;
-  padding: 0 15px;
-  color: #666;
+.price{
+font-size:16px;
+font-weight:bold;
+margin-top:8px;
 }
-
-.buy-btn {
-  display: inline-block;
-  margin: 15px 0 25px;
-  padding: 10px 25px;
-  background-color: #111;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 14px;
+.buy-btn{
+display:inline-block;
+margin:15px 0 25px;
+padding:10px 25px;
+background:#111;
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-size:14px;
 }
 
 /* About */
-.about {
-  background-color: #f0ede8;
-  border-radius: 12px;
+.about{
+background:#f0ede8;
+border-radius:12px;
 }
 
 /* Footer */
-footer {
-  background-color: #111;
-  color: #bbb;
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
+footer{
+background:#111;
+color:#bbb;
+text-align:center;
+padding:18px;
+font-size:13px;
 }
 
-/* Mobile Fix */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 26px;
-  }
-
-  .hero {
-    height: 45vh;
-  }
-
-  .product img {
-    height: 260px;
-  }
+/* Mobile */
+@media(max-width:768px){
+.hero{height:45vh;}
+header h1{font-size:26px;}
+.product img{height:230px;}
 }
 </style>
 </head>
@@ -143,43 +119,25 @@ footer {
 <body>
 
 <header>
-  <img src="logo.png" alt="The Flux Style Logo" class="logo">
-  <h1>The Flux Style</h1>
-  <p>Luxury Bags & Wallets</p>
+<img src="logo.png" class="logo" alt="The Flux Style">
+<h1>The Flux Style</h1>
+<p>Luxury Bags & Wallets</p>
 </header>
 
 <div class="hero">
-  <img src="banner.png" alt="Luxury Bags Banner">
+<img src="banner.png" alt="Luxury Bags Banner">
 </div>
 
 <section>
-  <h2>Our Collections</h2>
+<h2>Our Collections</h2>
 
-  <div class="products">
+<div class="products">
 
-    <div class="product">
-      <img src="women bag.jpeg" alt="Women Bag">
-      <h3>Women Bags</h3>
-      <p>Elegant daily and party bags crafted for modern women.</p>
-      <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
-    </div>
+<div class="product">
+<img src="women bag.jpeg">
+<h3>Women Bags</h3>
+<p>Elegant bags for modern women.</p>
+<p class="price">₹1,499</p>
+<a class="buy-btn"
+href="https://wa.me/918076520235?text=Hello%20The%20Flux%20Style,%
 
-    <div class="product">
-      <img src="sling-bag.jpg" alt="Sling Bag">
-      <h3>Sling Bags</h3>
-      <p>Trendy sling bags for effortless everyday styling.</p>
-      <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
-    </div>
-
-    <div class="product">
-      <img src="mens-leather-wallet.jpg" alt="Wallet">
-      <h3>Wallets</h3>
-      <p>Slim, premium wallets for men and women.</p>
-      <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
-    </div>
-
-    <div class="product">
-      <img src="bridal bag.jpg" alt="Bridal Bag">
-      <h3>Bridal Bags</h3>
-      <p>Royal bridal clutches for weddings & special occasions.</p>
-      <a class="buy-btn" href="https://wa.me/918076520235">Bu
