@@ -7,15 +7,15 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #faf9f7;
-    color: #333;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf9f7;
+  color: #333;
 }
 
+/* Header */
 header {
   background: linear-gradient(135deg, #faf7f2, #f3ede4);
-  color: #111;
   padding: 35px 20px;
   text-align: center;
   border-bottom: 1px solid #e6dccf;
@@ -28,108 +28,120 @@ header h1 {
   color: #111;
 }
 
+header p {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
 .logo {
   width: 160px;
   margin-bottom: 15px;
 }
 
-
-header p {
-    margin-top: 8px;
-    font-size: 14px;
-    opacity: 0.85;
-}
-
-/* Hero */
+/* Banner */
 .hero {
-    background: url("banner.png") center/cover no-repeat;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
 }
 
-.hero h2 {
-    background: rgba(0,0,0,0.55);
-    color: white;
-    padding: 20px 30px;
-    font-size: 32px;
-    letter-spacing: 1px;
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* Section */
+/* Sections */
 section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 section h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
 /* Products */
 .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
 .product {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    text-align: center;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
 .product img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
 }
 
 .product h3 {
-    margin: 15px 0 5px;
+  margin: 15px 0 5px;
 }
 
 .product p {
-    font-size: 14px;
-    padding: 0 15px;
-    color: #666;
+  font-size: 14px;
+  padding: 0 15px;
+  color: #666;
 }
 
 .buy-btn {
-    display: inline-block;
-    margin: 15px 0 25px;
-    padding: 10px 25px;
-    background-color: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 14px;
+  display: inline-block;
+  margin: 15px 0 25px;
+  padding: 10px 25px;
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
 }
 
 /* About */
 .about {
-    background-color: #f0ede8;
-    border-radius: 12px;
+  background-color: #f0ede8;
+  border-radius: 12px;
 }
 
 /* Footer */
 footer {
-    background-color: #111;
-    color: #bbb;
-    text-align: center;
-    padding: 20px;
-    font-size: 13px;
+  background-color: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  .hero {
+    height: 45vh;
+  }
+
+  .product img {
+    height: 260px;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <header>
   <img src="logo.png" alt="The Flux Style Logo" class="logo">
   <h1>The Flux Style</h1>
@@ -137,57 +149,37 @@ footer {
 </header>
 
 <div class="hero">
-    <h2>Where Style Meets Sophistication</h2>
+  <img src="banner.png" alt="Luxury Bags Banner">
 </div>
 
 <section>
-    <h2>Our Collections</h2>
+  <h2>Our Collections</h2>
 
-    <div class="products">
+  <div class="products">
 
-        <div class="product">
-            <img src="women bag.jpeg" alt="Women Bag">
-            <h3>Women Bags</h3>
-            <p>Elegant daily and party bags crafted for modern women.</p>
-            <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
-        </div>
-
-        <div class="product">
-            <img src="sling-bag.jpg" alt="Sling Bag">
-            <h3>Sling Bags</h3>
-            <p>Trendy sling bags for effortless everyday styling.</p>
-            <a class="buy-btn" href="https://wa.me/9180765202355">Buy on WhatsApp</a>
-        </div>
-
-        <div class="product">
-            <img src="mens-leather-wallet.jpg" alt="Wallet">
-            <h3>Wallets</h3>
-            <p>Slim, premium wallets for men and women.</p>
-            <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
-        </div>
-
-        <div class="product">
-            <img src="bridal bag.jpg" alt="Bridal Bag">
-            <h3>Bridal Bags</h3>
-            <p>Royal bridal clutches for weddings & special occasions.</p>
-            <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
-        </div>
-
+    <div class="product">
+      <img src="women bag.jpeg" alt="Women Bag">
+      <h3>Women Bags</h3>
+      <p>Elegant daily and party bags crafted for modern women.</p>
+      <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
     </div>
-</section>
 
-<section class="about">
-    <h2>About Us</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">
-        The Flux Style is aluxury brand offering carefully curated
-        handbags, wallets, and accessories.  
-        Our focus is timeless design, premium quality, and affordable elegance.
-    </p>
-</section>
+    <div class="product">
+      <img src="sling-bag.jpg" alt="Sling Bag">
+      <h3>Sling Bags</h3>
+      <p>Trendy sling bags for effortless everyday styling.</p>
+      <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
+    </div>
 
-<footer>
-    © 2026 The Flux Style • Designed with elegance
-</footer>
+    <div class="product">
+      <img src="mens-leather-wallet.jpg" alt="Wallet">
+      <h3>Wallets</h3>
+      <p>Slim, premium wallets for men and women.</p>
+      <a class="buy-btn" href="https://wa.me/918076520235">Buy on WhatsApp</a>
+    </div>
 
-</body>
-</html>
+    <div class="product">
+      <img src="bridal bag.jpg" alt="Bridal Bag">
+      <h3>Bridal Bags</h3>
+      <p>Royal bridal clutches for weddings & special occasions.</p>
+      <a class="buy-btn" href="https://wa.me/918076520235">Bu
