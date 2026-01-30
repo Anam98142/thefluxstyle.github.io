@@ -1,170 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Flux Style | Bags & Wallets</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>The Flux Style | Luxury Bags & Wallets</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Lato, Helvetica, sans-serif;
-            background-color: #000;
-            color: #333;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf9f7;
+    color: #333;
+}
 
-        header {
-            background-color: #000;
-            color: white;
-            padding: 60PX 20px;
-            text-align: center;
-        }
+/* Header */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            letter-spacing: 1px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
 
-        header p {
-            margin-top: 8px;
-            font-size: 14px;
-            opacity: 0.9;
-        }
+header p {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.85;
+}
 
-        .hero {
-            background-color: #FFF;
-            padding: 60px 20px;
-            text-align: center;
-        }
+/* Hero */
+.hero {
+    background: url("https://images.unsplash.com/photo-1590874103328-eac38a683ce7") center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .hero h2 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
+.hero h2 {
+    background: rgba(0,0,0,0.55);
+    color: white;
+    padding: 20px 30px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
 
-        .hero p {
-            max-width: 600px;
-            margin: auto;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+/* Section */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
 
-        .products {
-            padding: 40px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
 
-        .products h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.product {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
 
-        .product {
-            background-color: white;
-            padding: 15px;
-            border-radius: 6px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
+.product img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
 
-        .product img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
+.product h3 {
+    margin: 15px 0 5px;
+}
 
-        .product h3 {
-            margin: 12px 0 6px;
-            font-size: 18px;
-        }
+.product p {
+    font-size: 14px;
+    padding: 0 15px;
+    color: #666;
+}
 
-        .product p {
-            font-size: 14px;
-            color: #666;
-        }
+.buy-btn {
+    display: inline-block;
+    margin: 15px 0 25px;
+    padding: 10px 25px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
 
-        .contact {
-            background-color: #C19A6B;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+/* About */
+.about {
+    background-color: #f0ede8;
+    border-radius: 12px;
+}
 
-        .contact h2 {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #C19A6B;
-            color: #aaa;
-            text-align: center;
-            padding: 12px;
-            font-size: 13px;
-        }
-    </style>
+/* Footer */
+footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+</style>
 </head>
- <header>
-<h1 style="font-size: 50px;">The Flux Style</h1>      ...
+
 <body>
-    <img src="15.56.23.jpeg" alt="Welcome Image" style="width:100%; height:auto;">
 
-<p style="font-size: 24px;">Luxury Bags • Wallets • Purses</p>
- </header>
+<header>
+    <h1>The Flux Style</h1>
+    <p>Luxury Bags • Wallets • Timeless Elegance</p>
+</header>
 
-<section class="hero">
-    <h2>Timeless Style for Women & Men</h2>
-    <p>
-        The Flux Style brings premium handbags, wallets, and accessories crafted
-        for elegance, durability, and modern lifestyle.  
-        Carefully curated designs — minimal, classy, and affordable.
+<div class="hero">
+    <h2>Where Style Meets Sophistication</h2>
+</div>
+
+<section>
+    <h2>Our Collections</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://via.placeholder.com/400x500" alt="Women Bag">
+            <h3>Women Bags</h3>
+            <p>Elegant daily and party bags crafted for modern women.</p>
+            <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/400x500" alt="Sling Bag">
+            <h3>Sling Bags</h3>
+            <p>Trendy sling bags for effortless everyday styling.</p>
+            <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/400x500" alt="Wallet">
+            <h3>Wallets</h3>
+            <p>Slim, premium wallets for men and women.</p>
+            <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/400x500" alt="Bridal Bag">
+            <h3>Bridal Bags</h3>
+            <p>Royal bridal clutches for weddings & special occasions.</p>
+            <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        The Flux Style is a boutique luxury brand offering carefully curated
+        handbags, wallets, and accessories.  
+        Our focus is timeless design, premium quality, and affordable elegance.
     </p>
 </section>
 
-<section class="products">
-    <h2>Featured Collection</h2>
-
-<div class="product-grid">
-  <div class="product-card">
-    <div class="image-container"><img src="women bag.jpeg"></div>
-    <h3>Handbag</h3>
-    <p class="description">Premium finish</p>
-    <p class="price">&#8377;2,499</p>
-    <button class="buy-btn">Buy</button>
-  </div>
-
-  <div class="product-card">
-    <div class="image-container"><img src="mens-leather-wallet.jpg"></div>
-    <h3>Wallet</h3>
-    <p class="description">Genuine Leather</p>
-    <p class="price">&#8377;1,299</p>
-    <button class="buy-btn">Buy</button>
-  </div>
-
-  <div class="product-card">
-    <div class="image-container"><img src="sling-bag.jpg"></div>
-    <h3>Sling Bag</h3>
-    <p class="description">Modern Look</p>
-    <p class="price">&#8377;1,899</p>
-    <button class="buy-btn">Buy</button>
-  </div>
-</div>  /section>
-    <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Instagram: @the_flux_style</p>
-    <p>Email:thefluxstyle89@gmail.com</p>
-</section>
-
 <footer>
-    © 2026 The Flux Style. All rights reserved.
+    © 2026 The Flux Style • Designed with elegance
 </footer>
 
 </body>
